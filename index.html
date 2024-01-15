@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>tailwindcss</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- header start -->
+    <header class="fixed text-blue-700 bg-white top-0 left-0 w-full z-10 flex items-center">
+        <div class="w-full ml-auto mr-auto px-[16px] py-[19px]">
+            <div class="relative flex justify-between items-center">
+                <h1><svg role="img" width="15%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>DJI</title>
+                        <path
+                            d="M19.2 7.8a716.856 716.856 0 0 0-1.232 4.63c-.202.772-.401 1.544-.634 2.308-.226.743-.504 1.535-.91 2.21-.422.703-.969 1.253-1.726 1.604-.3.137-.615.24-.939.306-.46.09-.926.146-1.394.165-1.163.065-3.628.056-4.79.056l.713-2.64c.539 0 1.078.002 1.617-.013.52-.014 1.092-.042 1.605-.163.56-.133.984-.36 1.355-.817.337-.416.564-.935.75-1.424.34-.893.688-2.173.934-3.093.277-1.041.544-2.085.812-3.129zm4.8 0-2.072 7.68h-3.84l2.073-7.68ZM11.339 4.92h3.84c-.403 1.5-.805 2.999-1.212 4.496-.283 1.044-.565 2.088-.872 3.124-.135.452-.269.903-.445 1.342-.141.352-.3.666-.591.93a1.908 1.908 0 0 1-.734.405c-.356.112-.717.154-1.085.184-.53.043-1.06.054-1.591.063-1.991.02-3.983.02-5.974-.001a21.408 21.408 0 0 1-.954-.034 5.319 5.319 0 0 1-.632-.07 1.851 1.851 0 0 1-.412-.119c-.44-.192-.664-.575-.677-1.043 0-.263.032-.525.093-.78.076-.367.171-.728.265-1.09.179-.691.506-1.966.762-2.638.2-.526.464-1.05.966-1.382.28-.186.576-.285.901-.35.241-.05.483-.075.728-.093.41-.03.82-.04 1.23-.047.582-.01 1.165-.013 1.748-.015L8.148 7.8h1.454l-.518 1.92c-.864 0-1.728-.002-2.593.003-.252.001-.504 0-.756.016a.968.968 0 0 0-.264.042c-.113.04-.17.11-.22.213-.073.15-.115.31-.162.468a84.804 84.804 0 0 0-.503 1.857c-.035.14-.07.28-.1.42-.022.099-.04.197-.05.298-.01.11-.014.242.053.345.068.103.182.127.29.143.12.018.241.021.363.025.199.006.398.007.597.008.544.003 1.089.003 1.633 0 .25-.002.501-.004.752-.014.173-.007.343-.013.513-.054.13-.031.23-.08.318-.186.056-.071.1-.15.133-.235.088-.209.15-.425.213-.641.245-.83.466-1.665.692-2.499l.675-2.503.67-2.505h3.84z" />
+                    </svg></h1>
+                <div class="flex items-center">
+                    <button id="humberger" name="humberger" type="button" class="absolute block right-4 lg:hidden">
+                        <span class="humberger-line transition duration-500 ease-out"></span>
+                        <span class="humberger-line transition duration-500 ease-in"></span>
+                        <span class="humberger-line transition duration-500 ease-out"></span>
+                    </button>
+                    <nav id="nav-menu" class="absolute py-6 right-4 max-w[250px] w-full bg-white top-full rounded-lg shadow-lg hidden lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a class="text-black text-base py-2 mx-8 flex group-hover:text-white" href="#">Home</a>
+                            </li>
+
+                            <li class="group">
+                                <a class="text-black text-base py-2 mx-8 flex" href="#">Picture</a>
+                            </li>
+
+                            <li>
+                                <a class="text-black text-base py-2 mx-8 flex" href="#">About Us</a>
+                            </li>
+
+                            <li>
+                                <a class="text-black text-base py-2 mx-8 flex" href="#">Blog</a>
+                            </li>
+
+                            <li>
+                                <a class="text-black text-base py-2 mx-8 flex" href="#">Media Social</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+
+    <!-- <div class="text-center">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="src/img/dji.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </nav>
+    </div> -->
+
+    <!-- <blockquote class="mt-10 text-2xl font-semibold italic text-center text-slate-900">
+        When you look
+        <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+          <span class="relative text-white">CAHYO</span>
+        </span>
+        all the time, people think that you're busy.
+      </blockquote> -->
+
+    <!-- section home start -->
+    <section id="home">
+        <div class="w-full relative h-screen">
+            <video class="w-full h-full absolute object-cover" class="background" width="1920" autoplay muted loop
+                id="street">
+                <source class="vid" src="src/img/y2mate.com - DJI  Introducing Mavic 3 Classic_1080p.mp4"
+                    type="video/mp4">
+            </video>
+            <!-- <div class="absolute top-0 left-0 w-full h-full bg-gray-900/50"> -->
+            <div class="absolute w-full h-full justify-center text-center top-0 left-0 flex flex-col">
+                <h1 class="text-white text-4xl font-bold mb-3 md:text-5xl italic">DRONE <span
+                        class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block">
+                        <span class="relative text-black">DJI</span>
+                    </span> MAVIC 3</h1>
+                <p class="text-white text-3xl mb-3">Imaging Above Everything</p>
+                <div class="flex flex-row justify-center">
+                    <button
+                        class="text-black font-semibold text-base border  bg-white py-3 px-3 rounded-xl hover:bg-transparent hover:text-white transition duration-500 ease-in-out mr-3">
+                        Pesan Sekarang</button>
+                    <button
+                        class="text-white font-semibold text-base border  bg-transparent py-3 px-3 rounded-xl hover:bg-white hover:text-black transition duration-500 ease-in-out">
+                        Unduh</button>
+                </div>
+
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#00000" fill-opacity="1"
+                d="M0,224L46.5,64L92.9,96L139.4,160L185.8,96L232.3,160L278.7,192L325.2,128L371.6,192L418.1,96L464.5,32L511,224L557.4,32L603.9,160L650.3,160L696.8,0L743.2,128L789.7,128L836.1,256L882.6,160L929,160L975.5,32L1021.9,160L1068.4,128L1114.8,96L1161.3,0L1207.7,128L1254.2,224L1300.6,256L1347.1,32L1393.5,192L1440,64L1440,0L1393.5,0L1347.1,0L1300.6,0L1254.2,0L1207.7,0L1161.3,0L1114.8,0L1068.4,0L1021.9,0L975.5,0L929,0L882.6,0L836.1,0L789.7,0L743.2,0L696.8,0L650.3,0L603.9,0L557.4,0L511,0L464.5,0L418.1,0L371.6,0L325.2,0L278.7,0L232.3,0L185.8,0L139.4,0L92.9,0L46.5,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+    <!-- section home end -->
+
+    <!-- section picture start -->
+    <section id="picture">
+
+        <div class="max-w-[1240px] mx-auto py-16 px-4 text-center">
+            <h1 class="font-bold text-lg mb-3">ALL PRODUCT HERE 100% ORIGINAL</h1>
+            <p class="font-semibold text-slate-500 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium magni ut possimus iure</p>
+            <div class="grid grid-rows-none gap-2 md:grid-cols-5">
+                <img src="src/img/dji m 3.webp" alt=""
+                    class="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2">
+                <!-- <video class="w-full h-full absolute object-cover" class="background" width="1920" autoplay muted loop
+        id="street">
+        <source class="vid" src="src/img/y2mate.com - DJI  This is DJI Mavic 3_1080p.mp4"
+            type="video/mp4">
+    </video> -->
+                <img src="src/img/Screenshot 2024-0- at 09..30.png" alt="" class="w-full h-full object-cover">
+                <img src="src/img/Screenshot 2024-0- at 09..38.png" alt="" class="w-full h-full object-cover">
+                <img src="src/img/Screenshot 2024-0- at 09..49.png" alt="" class="w-full h-full object-cover">
+                <img src="src/img/Screenshot 2024-0- at 09.2.24.png" alt="" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+    <!-- section picture end -->
+
+
+    <section id="product" class="mt-5 md:flex gap-2 max-w-[1240px] mx-auto py-16 px-4">
+        <div
+            class=" ml-3 mr-3 w-full max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="src/img/Screenshot 2024-0- at 09..38.png" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="#">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">DJI MAVIC 3 PRO</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$20</span>
+                    <a href="#"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Order
+                        Now</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class=" ml-3 mr-3 w-full max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="src/img/Screenshot 2024-0- at 09..30.png" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="#">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">DJI MAVIC 3 PRO</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$20</span>
+                    <a href="#"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Order
+                        Now</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class=" ml-3 mr-3 w-full max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="src/img/Screenshot 2024-0- at 09..49.png" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="#">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">DJI MAVIC 3 PRO</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$20</span>
+                    <a href="#"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Order
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- section social media start -->
+
+
+
+
+
+
+    <section class="bg-black" id="about">
+
+
+
+
+
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,224L46.5,64L92.9,96L139.4,160L185.8,96L232.3,160L278.7,192L325.2,128L371.6,192L418.1,96L464.5,32L511,224L557.4,32L603.9,160L650.3,160L696.8,0L743.2,128L789.7,128L836.1,256L882.6,160L929,160L975.5,32L1021.9,160L1068.4,128L1114.8,96L1161.3,0L1207.7,128L1254.2,224L1300.6,256L1347.1,32L1393.5,192L1440,64L1440,0L1393.5,0L1347.1,0L1300.6,0L1254.2,0L1207.7,0L1161.3,0L1114.8,0L1068.4,0L1021.9,0L975.5,0L929,0L882.6,0L836.1,0L789.7,0L743.2,0L696.8,0L650.3,0L603.9,0L557.4,0L511,0L464.5,0L418.1,0L371.6,0L325.2,0L278.7,0L232.3,0L185.8,0L139.4,0L92.9,0L46.5,0L0,0Z">
+            </path>
+        </svg>
+        <div class="max-w-[1240px] mx-auto py-16 px-4 text-white">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-3 lg:w-1/2">
+                    <h1 class="font-bold text-8xl text-white mb-3">About Us</h1>
+                    <h3 class="font-semibold text-2xl uppercase mb-2">Dà-Jiāng Innovations</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate culpa sit </p>
+                </div>
+                <div class="w-full px-4 py-3 lg:w-1/2 lg:pt-10">
+                    <h1 class="font-semibold text-4xl mb-2">SOCIAL MEDIA</h1>
+                    <p class="mb-3 text-2xl font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Minima provident </p>
+                    <div class="flex items-start">
+                        <a href="#"
+                            class="border rounded-full w-9 h-9 border-white justify-center items-center flex hover:bg-gradient-to-tr from-red-600 to-blue-600 hover:text-white transition duration-500 ease-in-out mr-2">
+                            <svg role="img" width="20px" class="fill-current text-white" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <a href="#"
+                            class="border rounded-full w-9 h-9 border-white justify-center items-center flex hover:bg-red-600 hover:text-white transition duration-500 ease-in-out mr-2">
+                            <svg role="img" width="20px" class="fill-current text-white" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+
+                        <a href="#"
+                            class="border rounded-full w-9 h-9 border-white justify-center items-center flex hover:bg-blue-800 hover:text-white transition duration-500 ease-in-out mr-2">
+                            <svg role="img" width="20px" class="fill-current text-white" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path
+                                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                            </svg>
+
+                            <a href="#"
+                                class="border rounded-full w-9 h-9 border-white justify-center items-center flex hover:bg-green-600 hover:text-white transition duration-500 ease-in-out mr-2">
+                                <svg role="img" width="20px" class="fill-current text-white" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>WhatsApp</title>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full p-4 text-center border border-white rounded-lg shadow sm:p-8 dark:bg-black dark:border-black">
+                <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Work fast from anywhere</h5>
+                <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">Stay up to date and move work forward
+                    with Flowbite on iOS & Android. Download the app today.</p>
+                <div
+                    class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+                    <a href="#"
+                        class="w-full sm:w-auto bg-white hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-black rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                        <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab"
+                            data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path fill="currentColor"
+                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                            </path>
+                        </svg>
+                        <div class="text-left rtl:text-right">
+                            <div class="mb-1 text-xs">Download on the</div>
+                            <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="w-full sm:w-auto bg-white hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-black rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                        <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab"
+                            data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z">
+                            </path>
+                        </svg>
+                        <div class="text-left rtl:text-right">
+                            <div class="mb-1 text-xs">Get in on</div>
+                            <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section social media end -->
+
+
+    <!-- section try start -->
+    <section id="try">
+    </section>
+    <!-- section try end -->
+
+    <!--  -->
+
+
+
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <main class="grid min-h-screen w-full place-content-center bg-gray-900">
+        <div x-data="imageSlider" class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
+            <div class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
+                <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
+            </div>
+
+            <button @click="previous()"
+                class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
+            </button>
+
+            <button @click="forward()"
+                class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
+            </button>
+
+            <div class="relative h-80" style="width: 30rem">
+                <template x-for="(image, index) in images">
+                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
+                        x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                        x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+                        x-transition:leave-end="opacity-0" class="absolute top-0">
+                        <img :src="image" alt="image" class="rounded-sm" />
+                    </div>
+                </template>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("alpine:init", () => {
+            Alpine.data("imageSlider", () => ({
+                currentIndex: 1,
+                images: [
+                    "src/img/jakub-dziubak-XtUd5SiX464-unsplash.jpg",
+                    "src/img/IMG_1318.JPG",
+                    "src/img/john-schnobrich-ydju9gb6fiI-unsplash.jpg",
+                ],
+                previous() {
+                    if (this.currentIndex > 1) {
+                        this.currentIndex = this.currentIndex - 1;
+                    }
+                },
+                forward() {
+                    if (this.currentIndex < this.images.length) {
+                        this.currentIndex = this.currentIndex + 1;
+                    }
+                },
+            }));
+        });
+    </script> -->
+
+    <!--  -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
